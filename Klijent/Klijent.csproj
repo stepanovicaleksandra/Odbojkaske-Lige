@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C246052-9B7F-4081-9240-FEB105BCD307}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Klijent</RootNamespace>
+    <AssemblyName>Klijent</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDodajMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodajMec.Designer.cs">
+      <DependentUpon>FrmDodajMec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPretragaKola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPretragaKola.Designer.cs">
+      <DependentUpon>FrmPretragaKola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPretragaTimova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPretragaTimova.Designer.cs">
+      <DependentUpon>FrmPretragaTimova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrikaziKolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrikaziKolo.Designer.cs">
+      <DependentUpon>FrmPrikaziKolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrikaziMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrikaziMec.Designer.cs">
+      <DependentUpon>FrmPrikaziMec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrikaziTim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrikaziTim.Designer.cs">
+      <DependentUpon>FrmPrikaziTim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosKola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosKola.Designer.cs">
+      <DependentUpon>FrmUnosKola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosTima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosTima.Designer.cs">
+      <DependentUpon>FrmUnosTima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komunikacija.cs" />
+    <Compile Include="KontrolerKI.cs" />
+    <Compile Include="FrmPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPocetna.Designer.cs">
+      <DependentUpon>FrmPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDodajMec.resx">
+      <DependentUpon>FrmDodajMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPocetna.resx">
+      <DependentUpon>FrmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPretragaKola.resx">
+      <DependentUpon>FrmPretragaKola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPretragaTimova.resx">
+      <DependentUpon>FrmPretragaTimova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrikaziKolo.resx">
+      <DependentUpon>FrmPrikaziKolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrikaziMec.resx">
+      <DependentUpon>FrmPrikaziMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrikaziTim.resx">
+      <DependentUpon>FrmPrikaziTim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosKola.resx">
+      <DependentUpon>FrmUnosKola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosTima.resx">
+      <DependentUpon>FrmUnosTima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domen\Domen.csproj">
+      <Project>{eda0b6fc-8429-4652-b683-a95e6a6f7dd9}</Project>
+      <Name>Domen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
